@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmarker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index-style.css" />
+  </head>
+
+  <body>
+    <header class="">
+      <div class="content container">
+        <div class="py-2 text-center position-relative">
+          <h1 class="fw-bold">Bookmarker</h1>
+        </div>
+        <div class="w-100">
+          .........................................................................................................................................................................................................................................................................................................................................................................................
+        </div>
+        <div class="body-title d-flex">
+          <h2 class="py-3">
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+          </h2>
+        </div>
+        <div class="main-body">
+          <label class="pb-2 fw-semibold" for="sitename"
+            ><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label
+          >
+          <input
+            id="siteName"
+            type="text"
+           
+            placeholder="Bookmarker Name "
+            class="form-control form-control-edit "
+          />
+          <label class="pb-2 pt-4 fw-semibold" for="siteure"
+            ><i class="fa-solid fa-link pe-2"></i> Site URL</label
+          >
+          <input
+            id="siteUrl"
+            type="text"
+            placeholder="Website URL "
+            class="form-control form-control-edit"
+          />
+          <div class="py-4 d-flex justify-content-center align-content-center">
+            <button
+              type="submit"
+              onclick="submit() "
+              class="btn btn-submit px-5 text-white"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+        <div class="w-100">
+          .........................................................................................................................................................................................................................................................................................................................................................................................
+        </div>
+        <div class="table">
+          <table class="bg-light mt-4 text-center table">
+            <thead>
+              <th>Index</th>
+              <th>Website Name</th>
+              <th>Visit</th>
+
+              <th>Delete</th>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </header>
+    <div class="overlay position-fixed d-none justify-content-center align-items-center ">
+      <div class="content bg-white p-4 rounded-2 shadow-lg  ">
+        <div
+          class=" d-flex justify-content-between align-items-center mb-4 " >
+          <div class="circles d-flex">
+            <span class="rounded-circle span1 me-2"></span>
+            <span class="rounded-circle span2 me-2"></span>
+            <span class="rounded-circle span3 me-2"></span>
+          </div>
+          <button onclick=" closeModal()" class="btn border-0" id="closeBtn">
+            <i class="fa-solid fa-xmark close fs-3"></i>
+          </button>
+        </div>
+        <p class="m-0 pb-2 ">
+          Site Name or Url is not valid, Please follow the rules below :
+        </p>
+        <ol class=" list-unstyled m-0">
+          <li>
+            <i class="fa-regular fa-circle-right p-2"></i>Site name must contain
+            at least 3 characters
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+            valid one
+          </li>
+        </ol>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/min.js"></script>
+  </body>
+</html>
